@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chronometer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="212dp"
+            android:layout_height="70dp" >
+
+            <ImageButton
+                android:id="@+id/imageButtonRec"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:onClick="onStartClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/record" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPlay"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:onClick="onPlayClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/play" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        style="@style/Buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="goToChoiceActivity"
+        android:text="@string/submit" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Chronometer"
+        android:textColor="#FF0000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/record"
+        android:textColor="#FF0000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

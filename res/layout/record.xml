@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:gravity="center"
+        android:text="@string/record"
+        android:textColor="#FF0000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        android:textSize="28sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:text="Chronometer" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chronometer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButtonRec"
+                android:layout_width="150dp"
+                android:layout_height="144dp"
+                android:adjustViewBounds="true"
+                android:onClick="onStartClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/record" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPlay"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:onClick="onPlayClick"
+                android:src="@drawable/play" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        style="@style/Buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="goToChoiceActivity"
+        android:text="@string/submit" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SongReverse</string>
+    <string name="hello_world">ПесняНаоборот</string>
+    <string name="play">Играть!</string>
+    <string name="stat">Статистика</string>
+    <string name="exit">Выйти</string>
+    <string name="help">Справка</string>
+    <string name="title_activity_record">RecordActivity</string>
+    <string name="record">Какая же будет Ваша песня?</string>
+    <string name="title_activity_choice">ChoiceActivity</string>
+    <string name="your_record">Ваша запись</string>
+    <string name="submit">Готово</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="start_record">Start record</string>
+    <string name="stop_record">Stop record</string>
+    <string name="start_read">Start read</string>
+    <string name="stop_read">Stop read</string>
+    <string name="title_activity_info">Справка</string>
+
+
+</resources>
